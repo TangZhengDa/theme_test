@@ -1,7 +1,7 @@
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
-    this.addEventListener('click', (event) => {
+    this.addEventListener('click', () => {
       event.preventDefault();
       this.closest('cart-items').updateQuantity(this.dataset.index, 0);
     });
